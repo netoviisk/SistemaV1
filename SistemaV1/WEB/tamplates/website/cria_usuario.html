@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<form method="post">
+    {% csrf_token %}
+
+    <label for="{{ form.id.id_for_label }}">ID</label>
+    {{ form.id }}
+
+    <label for="{{ form.nome.id_for_label }}">Nome</label>
+    {{ form.nome }}
+
+    <label for="{{ form.username.id_for_label }}">Username</label>
+    {{ form.username }}
+
+    <label for="{{ form.senha.id_for_label }}">Senha</label>
+    {{ form.senha }}
+
+    <button type="submit">Cadastrar</button>
+
+</form>

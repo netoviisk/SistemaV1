@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<table>
+    <tbody>
+    {% for usuario in usuarios % }
+    <tr>
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.nome }}</td>
+        <td>{{ usuario.username }}</td>
+        <td>{{ usuario.senha }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>

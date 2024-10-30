@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<form method="post">
+    {% csrf_token %}
+
+    Você tem certeza que quer excluir o usuario <b>{{ usuario.nome }}</b>
+
+    <br><br>
+
+    <button type="button">
+        <a href="{% url 'lista_usuarios' %}">Cancelar</a>
+    </button>
+    <button>Excluir</button>
+
+</form>
